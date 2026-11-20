@@ -1,0 +1,1251 @@
+{
+  "harness": "/root/dashboard-harness",
+  "run": {
+    "startedAt": "2026-11-20T20:55:42.571Z",
+    "finishedAt": "2026-11-20T20:58:32.405Z",
+    "staging": "https://staging.qubickle.com",
+    "widths": [
+      1440,
+      1280,
+      768,
+      390,
+      375
+    ],
+    "deviceScaleFactor": 2,
+    "viewportHeight": 900
+  },
+  "staging": {
+    "branch": "staging/c-followup-4",
+    "commit": "1faddc1d"
+  },
+  "verdict": "PASS (automated) — 15 manual check(s) still need a human eye",
+  "counts": {
+    "pass": 115,
+    "fail": 0,
+    "manual": 15
+  },
+  "results": [
+    {
+      "check": "a: no horizontal overflow",
+      "page": "dashboard",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "dashboard",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png"
+    },
+    {
+      "check": "h: upcoming count agrees with schedule rows",
+      "page": "dashboard",
+      "width": 1440,
+      "result": "manual",
+      "detail": "UPCOMING=2 but no schedule rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "dashboard",
+      "width": 1440,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "dashboard",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "calendar",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/calendar.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "calendar",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/calendar.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "calendar",
+      "width": 1440,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/calendar.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "calendar",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/calendar.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "billing",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/billing.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "billing",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/billing.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "billing",
+      "width": 1440,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/billing.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "billing",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/billing.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "e: no monospace in bookings table",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "0 of 65 cells use a mono font",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "f: dates without seconds",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no HH:MM:SS times visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "g: no duplicate lifecycle rows",
+      "page": "bookings",
+      "width": 1440,
+      "result": "manual",
+      "detail": "lifecycle section found but no rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "bookings",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png"
+    },
+    {
+      "check": "c: book page reaches the time step",
+      "page": "book",
+      "width": 1440,
+      "result": "manual",
+      "detail": "no full-screen error, but no time slots detected — judge on the screenshot",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "book",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/book.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "book",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "home",
+      "width": 1440,
+      "result": "pass",
+      "detail": "scrollWidth=1440 innerWidth=1440",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/home.png"
+    },
+    {
+      "check": "b: home page loads",
+      "page": "home",
+      "width": 1440,
+      "result": "pass",
+      "detail": "no error state; page rendered (2401 chars visible)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/home.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "home",
+      "width": 1440,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/home.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "dashboard",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "dashboard",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png"
+    },
+    {
+      "check": "h: upcoming count agrees with schedule rows",
+      "page": "dashboard",
+      "width": 1280,
+      "result": "manual",
+      "detail": "UPCOMING=2 but no schedule rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "dashboard",
+      "width": 1280,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "dashboard",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "calendar",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/calendar.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "calendar",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/calendar.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "calendar",
+      "width": 1280,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/calendar.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "calendar",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/calendar.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "billing",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/billing.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "billing",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/billing.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "billing",
+      "width": 1280,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/billing.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "billing",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/billing.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "e: no monospace in bookings table",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "0 of 65 cells use a mono font",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "f: dates without seconds",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no HH:MM:SS times visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "g: no duplicate lifecycle rows",
+      "page": "bookings",
+      "width": 1280,
+      "result": "manual",
+      "detail": "lifecycle section found but no rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "bookings",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png"
+    },
+    {
+      "check": "c: book page reaches the time step",
+      "page": "book",
+      "width": 1280,
+      "result": "manual",
+      "detail": "no full-screen error, but no time slots detected — judge on the screenshot",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "book",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/book.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "book",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "home",
+      "width": 1280,
+      "result": "pass",
+      "detail": "scrollWidth=1280 innerWidth=1280",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/home.png"
+    },
+    {
+      "check": "b: home page loads",
+      "page": "home",
+      "width": 1280,
+      "result": "pass",
+      "detail": "no error state; page rendered (2401 chars visible)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/home.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "home",
+      "width": 1280,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/home.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "dashboard",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "dashboard",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png"
+    },
+    {
+      "check": "h: upcoming count agrees with schedule rows",
+      "page": "dashboard",
+      "width": 768,
+      "result": "manual",
+      "detail": "UPCOMING=2 but no schedule rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "dashboard",
+      "width": 768,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "dashboard",
+      "width": 768,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "calendar",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/calendar.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "calendar",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/calendar.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "calendar",
+      "width": 768,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/calendar.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "calendar",
+      "width": 768,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/calendar.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "billing",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/billing.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "billing",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/billing.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "billing",
+      "width": 768,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/billing.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "billing",
+      "width": 768,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/billing.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "e: no monospace in bookings table",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "0 of 65 cells use a mono font",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "f: dates without seconds",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "no HH:MM:SS times visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "g: no duplicate lifecycle rows",
+      "page": "bookings",
+      "width": 768,
+      "result": "manual",
+      "detail": "lifecycle section found but no rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "bookings",
+      "width": 768,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png"
+    },
+    {
+      "check": "c: book page reaches the time step",
+      "page": "book",
+      "width": 768,
+      "result": "manual",
+      "detail": "no full-screen error, but no time slots detected — judge on the screenshot",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "book",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/book.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "book",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "home",
+      "width": 768,
+      "result": "pass",
+      "detail": "scrollWidth=768 innerWidth=768",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/home.png"
+    },
+    {
+      "check": "b: home page loads",
+      "page": "home",
+      "width": 768,
+      "result": "pass",
+      "detail": "no error state; page rendered (2320 chars visible)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/home.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "home",
+      "width": 768,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/home.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "dashboard",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "dashboard",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png"
+    },
+    {
+      "check": "h: upcoming count agrees with schedule rows",
+      "page": "dashboard",
+      "width": 390,
+      "result": "manual",
+      "detail": "UPCOMING=2 but no schedule rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "dashboard",
+      "width": 390,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "dashboard",
+      "width": 390,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "calendar",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/calendar.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "calendar",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/calendar.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "calendar",
+      "width": 390,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/calendar.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "calendar",
+      "width": 390,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/calendar.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "billing",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/billing.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "billing",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/billing.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "billing",
+      "width": 390,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/billing.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "billing",
+      "width": 390,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/billing.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "e: no monospace in bookings table",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "0 of 65 cells use a mono font",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "f: dates without seconds",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "no HH:MM:SS times visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "g: no duplicate lifecycle rows",
+      "page": "bookings",
+      "width": 390,
+      "result": "manual",
+      "detail": "lifecycle section found but no rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "bookings",
+      "width": 390,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png"
+    },
+    {
+      "check": "c: book page reaches the time step",
+      "page": "book",
+      "width": 390,
+      "result": "manual",
+      "detail": "no full-screen error, but no time slots detected — judge on the screenshot",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "book",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/book.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "book",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "home",
+      "width": 390,
+      "result": "pass",
+      "detail": "scrollWidth=390 innerWidth=390",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/home.png"
+    },
+    {
+      "check": "b: home page loads",
+      "page": "home",
+      "width": 390,
+      "result": "pass",
+      "detail": "no error state; page rendered (2320 chars visible)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/home.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "home",
+      "width": 390,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/home.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "dashboard",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "dashboard",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png"
+    },
+    {
+      "check": "h: upcoming count agrees with schedule rows",
+      "page": "dashboard",
+      "width": 375,
+      "result": "manual",
+      "detail": "UPCOMING=2 but no schedule rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "dashboard",
+      "width": 375,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "dashboard",
+      "width": 375,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "calendar",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/calendar.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "calendar",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/calendar.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "calendar",
+      "width": 375,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/calendar.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "calendar",
+      "width": 375,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/calendar.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "billing",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/billing.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "billing",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/billing.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "billing",
+      "width": 375,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/billing.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "billing",
+      "width": 375,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/billing.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "e: no monospace in bookings table",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "0 of 65 cells use a mono font",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "f: dates without seconds",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "no HH:MM:SS times visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "g: no duplicate lifecycle rows",
+      "page": "bookings",
+      "width": 375,
+      "result": "manual",
+      "detail": "lifecycle section found but no rows detected",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "i: exactly one sidebar item active",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "1 active item (aria-current=\"page\")",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "j: no header status pills clipped/overlapping",
+      "page": "bookings",
+      "width": 375,
+      "result": "pass",
+      "detail": "no header status pills present (the specified end state)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png"
+    },
+    {
+      "check": "c: book page reaches the time step",
+      "page": "book",
+      "width": 375,
+      "result": "manual",
+      "detail": "no full-screen error, but no time slots detected — judge on the screenshot",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "book",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/book.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "book",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/book.png"
+    },
+    {
+      "check": "a: no horizontal overflow",
+      "page": "home",
+      "width": 375,
+      "result": "pass",
+      "detail": "scrollWidth=375 innerWidth=375",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/home.png"
+    },
+    {
+      "check": "b: home page loads",
+      "page": "home",
+      "width": 375,
+      "result": "pass",
+      "detail": "no error state; page rendered (2320 chars visible)",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/home.png"
+    },
+    {
+      "check": "d: no raw identifiers",
+      "page": "home",
+      "width": 375,
+      "result": "pass",
+      "detail": "none of ai:/page_builder:/custom_domain:/sso:/white_label: visible",
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/home.png"
+    }
+  ],
+  "manual": [
+    {
+      "page": "dashboard",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/dashboard.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "calendar",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/calendar.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "billing",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/billing.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "bookings",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/bookings.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "book",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/book.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1440/home.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "dashboard",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/dashboard.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "calendar",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/calendar.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "billing",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/billing.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "bookings",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/bookings.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "book",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/book.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "home",
+      "width": 1280,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/1280/home.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "dashboard",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/dashboard.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "calendar",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/calendar.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "billing",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/billing.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "bookings",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/bookings.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "book",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/book.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "home",
+      "width": 768,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/768/home.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "dashboard",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/dashboard.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "calendar",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/calendar.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "billing",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/billing.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "bookings",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/bookings.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "book",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/book.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/390/home.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "dashboard",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/dashboard.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "calendar",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/calendar.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "billing",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/billing.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "bookings",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/bookings.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "book",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/book.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    },
+    {
+      "page": "home",
+      "width": 375,
+      "screenshot": "/root/dashboard-harness/qa/screenshots/375/home.png",
+      "note": "Judge on the screenshot: premium feel (cal.com / calendly / hubspot.com), salience (does the eye land on the answer or the problem?), colour-coded status with soft tints, no 300px+ voids, no truncated text, no stray underlines, no broken images, no blank-labelled buttons."
+    }
+  ]
+}

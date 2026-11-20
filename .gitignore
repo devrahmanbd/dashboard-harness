@@ -1,0 +1,5 @@
+.env
+qa/screenshots/
+node_modules/
+.output/
+*.log
