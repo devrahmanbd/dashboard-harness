@@ -90,6 +90,38 @@ The first run is a **baseline**: expect failures. Compare later runs against
 it (`qa/report.json`) to show what the rebuild fixed. A run that reports
 failures is working correctly; a run that hides them is broken.
 
+## Screenshots
+
+Current screenshots from the latest harness run (Run 6, staging `staging/c-followup-4` @ `1faddc1d` — the design-ready build; 115 pass / 0 fail / 15 manual). All are 1440px desktop captures; the harness also screenshots 1280 / 768 / 390 / 375. The full set from a run lives in `qa/screenshots/` (git-ignored run artifacts); the six below are the representative set kept in the repo.
+
+![Today dashboard, 1440px](docs/screenshots/dashboard.png)
+*Today dashboard (`/dashboard`) — KPI strip, schedule rows, 1440px.*
+
+![Calendar, 1440px](docs/screenshots/calendar.png)
+*Calendar (`/dashboard/calendar`) — month grid, 1440px.*
+
+![Bookings, 1440px](docs/screenshots/bookings.png)
+*Bookings (`/dashboard/bookings`) — bookings table, 1440px.*
+
+![Billing, 1440px](docs/screenshots/billing.png)
+*Billing (`/dashboard/billing`) — plan cards, 1440px.*
+
+![Book flow, 1440px](docs/screenshots/book.png)
+*Public book page (`/u/acme-studio/book`) — time step, 1440px.*
+
+![Home, 1440px](docs/screenshots/home.png)
+*Home (`/`) — hero and Schedule card, 1440px.*
+
+## Staging → production
+
+The harness tests **staging** (`staging.qubickle.com`). Staging is the gate, not the end state:
+
+1. A change is built and deployed to staging first.
+2. The harness runs on staging, and a live-browser verification (a real browser, seed owner) checks the rendered result. Both must pass.
+3. Once staging is verified, the same code is pushed to production: a PR to `main`, merge, then a **manual deploy** (the GitHub Actions deploy workflow is stuck/unproven — its dispatch runs stay queued with no jobs, so production deploys use the workflow's own steps run manually). Production is `que.qubickle.com`.
+
+So: staging is verified first, and is later pushed into production. Nothing goes to production without passing on staging.
+
 ## Safety
 
 - **Staging only.** The script refuses any URL whose host is not
@@ -118,5 +150,6 @@ failures is working correctly; a run that hides them is broken.
   research (Bach et al., IEEE VIS/TVCG 2023) in one page.
 - `qa/qa-dashboard.mjs` — the Playwright script.
 - `qa/run.sh` — the runner (detached, logs to `qa/run.log`).
+- `docs/screenshots/` — the representative current screenshots (1440px, six pages) from the latest passing run. The full per-run set stays in `qa/screenshots/` (git-ignored).
 - `.env.example` — the credential template (no secret).
 - `.env` — the real credentials (mode 600, not committed, not in this repo).
